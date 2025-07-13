@@ -54,22 +54,23 @@ Streamlit 앱을 통해 특정 사용자 ID를 입력하면 해당 사용자에�
 ## 📂 디렉토리 구조 
 
 ```
-Recsys_DeepLearning_Project
+Recsys_DeepLearning_Project/
 │
-├── autointmlp.py
-├── show_st.py
-├── model/
-│   └── autoInt_model_weights.h5
+├── __pycache__/                   # Python 실행 중 생성된 캐시 폴더 (자동 생성)
 │
 ├── data/
-│   ├── field_dims.npy
-│   ├── label_encoders.pkl
-│   ├── 데이터_전처리.ipynb
+│   ├── field_dims.npy              # 각 범주형 변수의 임베딩 차원 정보
+│   ├── label_encoders.pkl          # 학습된 LabelEncoder 객체 저장 파일
+│   ├── 데이터_전처리.ipynb         # 원본 데이터 탐색 및 전처리 과정 노트북
 │   └── ml-1m/
-│       ├── movies_prepro.csv
-│       ├── ratings_prepro.csv
-│       └── users_prepro.csv
+│       ├── ratings_prepro.csv      # 사용자-아이템 평점 데이터 (전처리됨)
+│       ├── movies_prepro.csv       # 영화 메타데이터 (전처리됨)
+│       └── users_prepro.csv        # 사용자 속성 데이터 (전처리됨)
 │
-├── __pycache__/           # 자동 생성됨
+├── model/
+│   └── autoInt_model_weights.h5    # 학습된 AutoInt 모델 가중치
+│
+├── autointmlp.py              # AutoInt+ 모델 정의 파일
+└── show_st.py                 # Streamlit 웹앱 실행 스크립트
 
 ```
