@@ -1,5 +1,5 @@
 ## 🎬 딥러닝 기반 영화 추천 시스템 with AutoInt 
-이 프로젝트는 MovieLens 1M 데이터를 기반으로, 딥러닝 추천 시스템 모델인 AutoInt (Automatic Feature Interaction Learning via Self-Attentive Neural Networks) 를 활용하여 영화 추천 시스템을 구현한다.
+이 프로젝트는 MovieLens 1M 데이터를 기반으로, 딥러닝 추천 시스템 모델인 AutoInt+ (Automatic Feature Interaction Learning via Self-Attentive Neural Networks) 를 활용하여 영화 추천 시스템을 구현한다.
 
 ## 🛠️ 설치 방법 및 실행 환경
 
@@ -50,6 +50,15 @@ Streamlit 앱을 통해 특정 사용자 ID를 입력하면 해당 사용자에�
   <br/>
   <img src="https://github.com/user-attachments/assets/dd72b1e8-98b2-4233-b5ee-514e64e62d5c" width="400"/>
 </p>
+
+## 🧾 AutoInt+ 모델
+AutoInt+ 모델은 AutoInt에 2개의 레이어를 가진 피드포워드 뉴럴 네트워크(feedforward neural network)를 결합해 조인트(Joint) 훈련 방법을 진행한 모델로, 아래와 같은 구조를 가진다.
+
+<img width="797" height="447" alt="Image" src="https://github.com/user-attachments/assets/c6e75b8d-198c-4d90-9006-5c90d722aefb" />
+
+> 아래의 이미지는 [AutoInt 논문](https://dl.acm.org/doi/10.1145/3357384.3357925)에 있는 AutoInt 구조를 논문 내용을 참고하여 수정한 이미지입니다.
+
+
 
 ## 📂 디렉토리 구조 
 
