@@ -54,7 +54,7 @@ Streamlit 앱을 통해 특정 사용자 ID를 입력하면 해당 사용자에�
 ## 📂 디렉토리 구조 
 
 ```
-Recsys_DeepLearning_Project/
+📂 Recsys_DeepLearning_Project/
 │
 ├── __pycache__/                   # Python 실행 중 생성된 캐시 폴더 (자동 생성)
 │
